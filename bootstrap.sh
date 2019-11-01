@@ -12,5 +12,6 @@ cd ~
 mkdir Development && cd Development
 mkdir Repositories && cd Repositories
 
-curl -#L https://github.com/dauterl/setup-osx/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,LICENSE}
+cd Development/Repositories && curl -#L https://github.com/dauterl/setup-osx/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,LICENSE}
 
+sh test.sh
