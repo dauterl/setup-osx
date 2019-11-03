@@ -32,14 +32,14 @@ fi
 if [ $ARG == "brew" ] || [ $ARG == "all" ]; then
     # Run the brew.sh Script
     echo ""
-    sh ~/${REPO}/brew.sh
+    sh ~/${LOCAL_REPO}/brew.sh
     brew upgrade -v
 fi
 
 if [ $ARG == "data-tools" ] || [ $ARG == "all" ]; then
     # Run the data-tools.sh Script
     echo ""
-    sh ~/${REPO}/data-tools.sh
+    sh ~/${LOCAL_REPO}/data-tools.sh
 fi
 
 cd ~
