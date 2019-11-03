@@ -37,9 +37,9 @@ brew install wget --with-iri
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
+brew install grep
+brew install screen
+brew install php55 --with-gmp
 
 # Lxml and Libxslt
 brew install libxml2
