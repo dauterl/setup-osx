@@ -33,7 +33,7 @@ echo "------------------------------"
 echo "------------------------------"
 echo "Installing other tools."
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
