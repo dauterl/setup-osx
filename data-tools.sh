@@ -52,7 +52,7 @@ export PIP_REQUIRE_VIRTUALENV=false
 
 export WORKON_HOME=~/Envs
 mkdir -p $WORKON_HOME
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/Cellar/python/3.7.5/bin/virtualenvwrapper.sh
 
 ###############################################################################
 # Python 3 Virtual Enviroment                                                 #
@@ -62,7 +62,7 @@ echo "------------------------------"
 echo "Setting up py3-data virtual environment."
 
 # Create a Python3 data environment
-mkvirtualenv --python=/usr/local/bin/python3 py3-data
+mkvirtualenv --python=/usr/local/Cellar/python/3.7.5/bin/python3.7 py3-data
 workon py3-data
 
 # Install Python data modules
