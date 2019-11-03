@@ -25,7 +25,7 @@ echo "Installing Zshell."
 # Install Zsh.
 brew install zsh
 # Get Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+0>/dev/null sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # We installed the new shell, now we have to activate it
 chsh -s $(which zsh)
 echo "------------------------------"
