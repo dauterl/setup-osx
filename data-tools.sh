@@ -101,7 +101,8 @@ echo "Usage: workon py3-data for Python3"
 ###############################################################################
 echo "------------------------------"
 echo "Installing R"
-cd /usr/local && curl -#L https://stat.ethz.ch/R/daily/R-patched.tar.gz | sudo tar -xzv
+
+cd /usr/local && curl -#L https://cran.r-project.org/src/base/R-3/R-3.6.1.tar.gz | sudo tar -xzv
 cd R && tools/rsync-recommended
 echo "------------------------------"
 
