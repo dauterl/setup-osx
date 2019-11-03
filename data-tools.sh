@@ -32,7 +32,6 @@ brew install elasticsearch
 echo "------------------------------"
 echo "Installing Python"
 # Install Python
-brew install python
 brew install python3
 
 # Remove outdated versions from the cellar.
@@ -42,7 +41,7 @@ echo "------------------------------"
 echo "Setting up pip."
 
 # Install pip
-sudo easy_install pip --user
+sudo easy_install pip3 --user
 
 ###############################################################################
 # Virtual Enviroments                                                         #
@@ -54,8 +53,8 @@ echo "Setting up virtual environments."
 # Install virtual environments globally
 # It fails to install virtualenv if PIP_REQUIRE_VIRTUALENV was true
 export PIP_REQUIRE_VIRTUALENV=false
-pip install virtualenv --user
-pip install virtualenvwrapper --user
+pip3 install virtualenv --user
+pip3 install virtualenvwrapper --user
 
 export WORKON_HOME=~/Envs
 mkdir -p $WORKON_HOME
@@ -73,20 +72,20 @@ mkvirtualenv --python=/usr/local/bin/python3 py3-data
 workon py3-data
 
 # Install Python data modules
-pip install numpy
-pip install scipy
-pip install matplotlib
-pip install pandas
-pip install sympy
-pip install nose
-pip install unittest2
-pip install seaborn
-pip install scikit-learn
-pip install "ipython[all]"
-pip install bokeh
-pip install Flask
-pip install sqlalchemy
-pip install mysqlclient
+pip3 install numpy
+pip3 install scipy
+pip3 install matplotlib
+pip3 install pandas
+pip3 install sympy
+pip3 install nose
+pip3 install unittest2
+pip3 install seaborn
+pip3 install scikit-learn
+pip3 install "ipython[all]"
+pip3 install bokeh
+pip3 install Flask
+pip3 install sqlalchemy
+pip3 install mysqlclient
 
 ###############################################################################
 # Install IPython Profile
