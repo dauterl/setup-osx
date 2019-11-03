@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 for ARG in "$@"
 do 
 
@@ -31,14 +32,14 @@ fi
 if [ $ARG == "brew" ] || [ $ARG == "all" ]; then
     # Run the brew.sh Script
     echo ""
-    ./brew.sh
-    brew upgrade --all
+    sh ${REPO}/brew.sh
+    brew upgrade -v
 fi
 
 if [ $ARG == "data-tools" ] || [ $ARG == "all" ]; then
     # Run the data-tools.sh Script
     echo ""
-    ./data-tools.sh
+    sh ${REPO}/data-tools.sh
 fi
 
 cd ~
