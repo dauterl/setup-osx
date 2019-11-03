@@ -24,8 +24,9 @@ brew install apache-spark
 
 # Install data stores
 brew install postgresql
-brew install mongo
+brew install mongodb
 brew install redis
+brew cask install homebrew/cask-versions/adoptopenjdk8
 brew install elasticsearch
 
 echo "------------------------------"
@@ -41,7 +42,7 @@ echo "------------------------------"
 echo "Setting up pip."
 
 # Install pip
-easy_install pip
+sudo easy_install pip
 
 ###############################################################################
 # Virtual Enviroments                                                         #
