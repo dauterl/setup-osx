@@ -52,7 +52,7 @@ export PIP_REQUIRE_VIRTUALENV=false
 
 export WORKON_HOME=~/Envs
 mkdir -p $WORKON_HOME
-source /usr/local/Cellar/python/3.7.5/bin/virtualenvwrapper.sh
+source ~/Library/Python/3.7/bin/virtualenvwrapper.sh
 
 ###############################################################################
 # Python 3 Virtual Enviroment                                                 #
@@ -94,7 +94,6 @@ cp -r init/profile_default/ ~/.ipython/profile_default
 
 echo "------------------------------"
 echo "Script completed."
-echo "Usage: workon py2-data for Python2"
 echo "Usage: workon py3-data for Python3"
 
 ###############################################################################
