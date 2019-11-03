@@ -42,7 +42,7 @@ echo "------------------------------"
 echo "Setting up pip."
 
 # Install pip
-sudo easy_install pip
+sudo easy_install pip --user
 
 ###############################################################################
 # Virtual Enviroments                                                         #
@@ -54,8 +54,8 @@ echo "Setting up virtual environments."
 # Install virtual environments globally
 # It fails to install virtualenv if PIP_REQUIRE_VIRTUALENV was true
 export PIP_REQUIRE_VIRTUALENV=false
-pip install virtualenv
-pip install virtualenvwrapper
+pip install virtualenv --user
+pip install virtualenvwrapper --user
 
 export WORKON_HOME=~/Envs
 mkdir -p $WORKON_HOME
