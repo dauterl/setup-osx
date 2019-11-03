@@ -39,7 +39,6 @@ brew install wget
 brew install vim
 brew install grep
 brew install screen
-brew install php55
 
 # Lxml and Libxslt
 brew install libxml2
