@@ -36,10 +36,10 @@ echo "Installing other tools."
 brew install wget
 
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
+brew install vim
 brew install grep
 brew install screen
-brew install php55 --with-gmp
+brew install php55
 
 # Lxml and Libxslt
 brew install libxml2
