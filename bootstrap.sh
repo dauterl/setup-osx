@@ -12,4 +12,4 @@ mkdir Development && mkdir Development/Repositories && mkdir Development/Reposit
 curl -#L https://github.com/dauterl/setup-osx/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,LICENSE}
 
 echo Ready to run setup.sh
-sh Development/Repositories/setup-osx/setup.sh all
+sh ./Development/Repositories/setup-osx/setup.sh all
