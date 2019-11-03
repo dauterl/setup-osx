@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+#Get admin pw
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until the script has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 echo "------------------------------"
 echo "Installing Core GNU Utilities."
 # Install GNU core utilities (those that come with OS X are outdated).
