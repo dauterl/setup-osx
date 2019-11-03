@@ -37,12 +37,6 @@ brew install python3
 # Remove outdated versions from the cellar.
 brew cleanup
 
-echo "------------------------------"
-echo "Setting up pip."
-
-# Install pip
-sudo easy_install pip3 --user
-
 ###############################################################################
 # Virtual Enviroments                                                         #
 ###############################################################################
@@ -53,8 +47,8 @@ echo "Setting up virtual environments."
 # Install virtual environments globally
 # It fails to install virtualenv if PIP_REQUIRE_VIRTUALENV was true
 export PIP_REQUIRE_VIRTUALENV=false
-pip3 install virtualenv --user
-pip3 install virtualenvwrapper --user
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install virtualenv --user
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install virtualenvwrapper --user
 
 export WORKON_HOME=~/Envs
 mkdir -p $WORKON_HOME
@@ -72,20 +66,20 @@ mkvirtualenv --python=/usr/local/bin/python3 py3-data
 workon py3-data
 
 # Install Python data modules
-pip3 install numpy
-pip3 install scipy
-pip3 install matplotlib
-pip3 install pandas
-pip3 install sympy
-pip3 install nose
-pip3 install unittest2
-pip3 install seaborn
-pip3 install scikit-learn
-pip3 install "ipython[all]"
-pip3 install bokeh
-pip3 install Flask
-pip3 install sqlalchemy
-pip3 install mysqlclient
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install numpy
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install scipy
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install matplotlib
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install pandas
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install sympy
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install nose
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install unittest2
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install seaborn
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install scikit-learn
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install "ipython[all]"
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install bokeh
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install Flask
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install sqlalchemy
+/usr/local/Cellar/python/3.7.5/bin/pip3.7 install mysqlclient
 
 ###############################################################################
 # Install IPython Profile
