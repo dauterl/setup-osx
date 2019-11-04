@@ -103,6 +103,15 @@ echo "------------------------------"
 echo "Installing R"
 
 cd /usr/local && curl -#L https://cran.r-project.org/src/base/R-3/R-3.6.1.tar.gz | sudo tar -xzv
-cd R && tools/rsync-recommended
+
+cd R-3.6.1 
+./configure
+make
+make check
+make pdf
+make info
+make install
+make install-info
+make install-pdf
 echo "------------------------------"
 
