@@ -24,7 +24,8 @@ brew install apache-spark
 
 # Install data stores
 brew install postgresql
-brew install mongodb
+brew tap mongodb/brew
+brew install mongodb-community@4.0
 brew install redis
 brew cask install homebrew/cask-versions/adoptopenjdk8
 brew install elasticsearch
