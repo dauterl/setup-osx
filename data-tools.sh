@@ -39,65 +39,6 @@ brew install python3
 brew cleanup
 
 ###############################################################################
-# Virtual Enviroments                                                         #
-###############################################################################
-
-echo "------------------------------"
-echo "Setting up virtual environments."
-
-# Install virtual environments globally
-# It fails to install virtualenv if PIP_REQUIRE_VIRTUALENV was true
-export PIP_REQUIRE_VIRTUALENV=false
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install virtualenv --user
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install virtualenvwrapper --user
-
-export WORKON_HOME=~/Envs
-mkdir -p $WORKON_HOME
-source ~/Library/Python/3.7/bin/virtualenvwrapper.sh
-
-###############################################################################
-# Python 3 Virtual Enviroment                                                 #
-###############################################################################
-
-echo "------------------------------"
-echo "Setting up py3-data virtual environment."
-
-# Create a Python3 data environment
-mkvirtualenv --python=/usr/local/Cellar/python/3.7.5/bin/python3.7 py3-data
-workon py3-data
-
-# Install Python data modules
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install numpy
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install scipy
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install matplotlib
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install pandas
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install sympy
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install nose
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install unittest2
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install seaborn
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install scikit-learn
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install "ipython[all]"
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install bokeh
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install Flask
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install sqlalchemy
-/usr/local/Cellar/python/3.7.5/bin/pip3.7 install mysqlclient
-
-###############################################################################
-# Install IPython Profile
-###############################################################################
-
-echo "------------------------------"
-echo "Installing IPython Notebook Default Profile"
-
-# Add the IPython profile
-mkdir -p ~/.ipython
-cp -r init/profile_default/ ~/.ipython/profile_default
-
-echo "------------------------------"
-echo "Script completed."
-echo "Usage: workon py3-data for Python3"
-
-###############################################################################
 # Install R
 ###############################################################################
 echo "------------------------------"
