@@ -96,7 +96,6 @@ brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" macdown
