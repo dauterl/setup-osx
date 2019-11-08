@@ -13,4 +13,4 @@ mkdir -p ${LOCAL_REPO} && cd ${LOCAL_REPO}
 curl -#L https://github.com/dauterl/setup-osx/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,LICENSE}
 
 echo Ready to run setup.sh
-source ~/${LOCAL_REPO}/setup.sh all
+source ~/${LOCAL_REPO}/setup.sh ${1}
