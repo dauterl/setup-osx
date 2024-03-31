@@ -18,5 +18,5 @@ brew install --cask snowflake-snowsql
 curl -s https://raw.githubusercontent.com/dbt-labs/dbt-core-snapshots/main/install_bundle.sh | bash -s -- 1.6.3 3.9 mac
 
 brew install awscli
-
+brew install openssh
 
