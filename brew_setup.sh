@@ -19,4 +19,5 @@ curl -s https://raw.githubusercontent.com/dbt-labs/dbt-core-snapshots/main/insta
 
 brew install awscli
 brew install openssh
+brew install --cask visual-studio-code
 
