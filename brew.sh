@@ -84,24 +84,11 @@ brew cask install --appdir="~/Applications" adoptopenjdk
 brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text
+brew cask install --appdir="/Applications" visual-studio-code
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" macdown
-
-
-
-brew install --cask hammerspoon
-
-brew install --cask visual-studio-code
-brew tap databricks/tap
-
-brew install --cask snowflake-snowsql
-
-curl -s https://raw.githubusercontent.com/dbt-labs/dbt-core-snapshots/main/install_bundle.sh | bash -s -- 1.6.3 3.9 mac
-
-brew install awscli
-brew install --cask visual-studio-code
+brew cask install --appdir="/Applications" hammerspoon
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
