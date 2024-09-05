@@ -67,15 +67,8 @@ brew install ssh-copy-id
 brew install tree
 brew install pkg-config libffi
 brew install pandoc
-
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
 echo "------------------------------"
 
-echo "------------------------------"
 echo "Installing casks."
 # Core casks
 brew cask install --appdir="~/Applications" iterm2
@@ -87,7 +80,6 @@ brew cask install --appdir="~/Applications" xquartz
 brew cask install --appdir="/Applications" visual-studio-code
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" macdown
 brew cask install --appdir="/Applications" hammerspoon
 
 # Misc casks
