@@ -29,6 +29,7 @@ brew install redis
 # Install dbt, Databricks, Snowflake
 brew tap databricks/tap
 brew install databricks
+sudo softwareupdate --install-rosetta
 brew install --cask snowflake-snowsql
 curl -s https://raw.githubusercontent.com/dbt-labs/dbt-core-snapshots/main/install_bundle.sh | bash -s -- 1.6.3 3.9 mac
 
