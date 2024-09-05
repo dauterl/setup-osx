@@ -6,14 +6,12 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Install Heroku
-brew install heroku/brew/heroku
-heroku update
-
 #Install AWS CLI
 brew install awscli
 chmod 755 /usr/local/lib/pkgconfig
 brew link awscli
+
+brew install --cask google-cloud-sdk
 
 # Install Docker, which requires virtualbox
 brew install docker
@@ -24,11 +22,11 @@ brew install apache-spark
 
 # Install data stores
 brew install postgresql
-brew tap mongodb/brew
-brew install mongodb-community@4.0
 brew install redis
-brew cask install homebrew/cask-versions/adoptopenjdk8
-brew install elasticsearch
+
+# Install dbt, Databricks, Snowflake
+brew install databricks
+
 
 echo "------------------------------"
 echo "Installing Python"
