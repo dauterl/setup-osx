@@ -11,16 +11,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 #chmod 755 /usr/local/lib/pkgconfig
 #brew link awscli
 
+echo "------------------------------"
+echo "Installing Cloud CLIs, Data Stores, dbt, Snowflake, Databricks"
 brew install --cask google-cloud-sdk
-
-
-brew tap databricks/tap
-
-brew install --cask snowflake-snowsql
-
-curl -s https://raw.githubusercontent.com/dbt-labs/dbt-core-snapshots/main/install_bundle.sh | bash -s -- 1.6.3 3.9 mac
-
-
 
 # Install Docker, which requires virtualbox
 brew install docker
@@ -34,8 +27,10 @@ brew install postgresql
 brew install redis
 
 # Install dbt, Databricks, Snowflake
+brew tap databricks/tap
 brew install databricks
-
+brew install --cask snowflake-snowsql
+curl -s https://raw.githubusercontent.com/dbt-labs/dbt-core-snapshots/main/install_bundle.sh | bash -s -- 1.6.3 3.9 mac
 
 echo "------------------------------"
 echo "Installing Python"
