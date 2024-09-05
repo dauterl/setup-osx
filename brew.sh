@@ -87,9 +87,7 @@ echo "------------------------------"
 echo "------------------------------"
 echo "Installing casks."
 # Core casks
-brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" shiftit
 brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" adoptopenjdk
 brew cask install --appdir="~/Applications" xquartz
@@ -103,10 +101,6 @@ brew cask install --appdir="/Applications" macdown
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" dbeaver-community
-brew cask install --appdir="/Applications" sqlworkbenchj
-brew cask install --appdir="/Applications" insomnia
 echo "------------------------------"
 
 # Remove outdated versions from the cellar.
