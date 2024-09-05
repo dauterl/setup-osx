@@ -6,12 +6,21 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-#Install AWS CLI
-brew install awscli
-chmod 755 /usr/local/lib/pkgconfig
-brew link awscli
+#Install Cloud Provider CLI CLI
+#brew install awscli
+#chmod 755 /usr/local/lib/pkgconfig
+#brew link awscli
 
 brew install --cask google-cloud-sdk
+
+
+brew tap databricks/tap
+
+brew install --cask snowflake-snowsql
+
+curl -s https://raw.githubusercontent.com/dbt-labs/dbt-core-snapshots/main/install_bundle.sh | bash -s -- 1.6.3 3.9 mac
+
+
 
 # Install Docker, which requires virtualbox
 brew install docker
