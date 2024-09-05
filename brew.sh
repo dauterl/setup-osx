@@ -74,20 +74,20 @@ echo "------------------------------"
 
 echo "Installing casks."
 # Core casks
-brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" adoptopenjdk
-brew cask install --appdir="~/Applications" xquartz
+brew install cask --appdir="~/Applications" iterm2
+brew install cask --appdir="~/Applications" java
+brew install cask --appdir="~/Applications" adoptopenjdk
+brew install cask --appdir="~/Applications" xquartz
 
 # Development tool casks
-brew cask install --appdir="/Applications" visual-studio-code
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" hammerspoon
+brew install cask --appdir="/Applications" visual-studio-code
+brew install cask --appdir="/Applications" virtualbox
+brew install cask --appdir="/Applications" vagrant
+brew install cask --appdir="/Applications" hammerspoon
 
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" slack
+brew install cask --appdir="/Applications" google-chrome
+brew install cask --appdir="/Applications" slack
 echo "------------------------------"
 
 # Remove outdated versions from the cellar.
