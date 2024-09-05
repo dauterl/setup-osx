@@ -87,7 +87,6 @@ brew install cask --appdir="/Applications" vagrant
 brew install cask --appdir="/Applications" hammerspoon
 
 # Misc casks
-brew install cask --appdir="/Applications" google-chrome
 brew install cask --appdir="/Applications" slack
 echo "------------------------------"
 
