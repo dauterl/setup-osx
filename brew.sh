@@ -50,30 +50,21 @@ brew link libxslt --force
 brew install gcc ccache cmake pkg-config autoconf automake
 
 # Install SSL/SSH Stuff
-brew install openssl libressl libssh
+brew install openssl libressl libssh openssh
 
 # Install other useful binaries.
-brew install ack
-brew install dark-mode
 brew install direnv
 brew install git
 brew install git-lfs
 brew install git-flow
 brew install git-extras
-brew install hub
-brew install imagemagick
-brew install lua
-brew install lynx
 brew install p7zip
 brew install pigz
 brew install pv
 brew install rename
-brew install rhino
 brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
-brew install webkit2png
-brew install zopfli
 brew install pkg-config libffi
 brew install pandoc
 
@@ -97,6 +88,20 @@ brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" macdown
+
+
+
+brew install --cask hammerspoon
+
+brew install --cask visual-studio-code
+brew tap databricks/tap
+
+brew install --cask snowflake-snowsql
+
+curl -s https://raw.githubusercontent.com/dbt-labs/dbt-core-snapshots/main/install_bundle.sh | bash -s -- 1.6.3 3.9 mac
+
+brew install awscli
+brew install --cask visual-studio-code
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
