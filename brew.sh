@@ -85,6 +85,7 @@ brew install cask --appdir="/Applications" visual-studio-code
 brew install cask --appdir="/Applications" virtualbox
 brew install cask --appdir="/Applications" vagrant
 brew install cask --appdir="/Applications" hammerspoon
+brew install cask --appdir="/Applications" postman
 
 # Misc casks
 brew install cask --appdir="/Applications" slack
