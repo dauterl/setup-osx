@@ -6,14 +6,19 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+echo "------------------------------"
+echo "Installing Python"
+# Install Python
+brew install python3
+
+echo "------------------------------"
+echo "Installing Cloud CLIs, Data Stores, Snowflake, Databricks"
 #Install Cloud Provider CLI CLI
 #brew install awscli
 #chmod 755 /usr/local/lib/pkgconfig
 #brew link awscli
-
-echo "------------------------------"
-echo "Installing Cloud CLIs, Data Stores, dbt, Snowflake, Databricks"
-brew install --cask google-cloud-sdk
+#brew install --cask google-cloud-sdk
+brew install azure-cli
 
 # Install Docker, which requires virtualbox
 brew install docker
@@ -26,17 +31,17 @@ brew install apache-spark
 brew install postgresql
 brew install redis
 
-# Install dbt, Databricks, Snowflake
+# Install Databricks, Snowflake
 brew tap databricks/tap
 brew install databricks
 sudo softwareupdate --install-rosetta
 brew install --cask snowflake-snowsql
-curl -s https://raw.githubusercontent.com/dbt-labs/dbt-core-snapshots/main/install_bundle.sh | bash -s -- 1.6.3 3.9 mac
 
-echo "------------------------------"
-echo "Installing Python"
-# Install Python
-brew install python3
+#Install dbt Core with adapter
+python3 -m venv dbt-env
+source dbt-env/bin/activate
+pip install dbt-core dbt-databricks dbt-snowflake dbt-postgres dbt-mysql
+dbt --version
 
 # Remove outdated versions from the cellar.
 brew cleanup
@@ -59,4 +64,3 @@ make install
 make install-info
 make install-pdf
 echo "------------------------------"
-
