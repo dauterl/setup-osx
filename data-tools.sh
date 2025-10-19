@@ -43,6 +43,9 @@ source dbt-env/bin/activate
 pip install dbt-core dbt-databricks dbt-snowflake dbt-postgres dbt-mysql
 dbt --version
 
+#Install GDAL
+brew install gdal 
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
