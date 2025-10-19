@@ -89,6 +89,13 @@ brew install cask --appdir="/Applications" postman
 
 # Misc casks
 brew install cask --appdir="/Applications" slack
+brew install cask --appdir="/Applications" chatgpt
+brew install cask --appdir="/Applications" google-chrome
+brew install cask --appdir="/Applications" whatsapp
+brew install cask --appdir="/Applications" zoom
+brew install cask --appdir="/Applications" 1password
+brew install cask --appdir="/Applications" google-drive
+
 echo "------------------------------"
 
 # Remove outdated versions from the cellar.
