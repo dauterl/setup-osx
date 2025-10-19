@@ -77,7 +77,6 @@ echo "Installing casks."
 sudo softwareupdate --install-rosetta
 brew install cask --appdir="~/Applications" iterm2
 brew install cask --appdir="~/Applications" java
-brew install cask --appdir="~/Applications" adoptopenjdk
 brew install cask --appdir="~/Applications" xquartz
 
 # Development tool casks
