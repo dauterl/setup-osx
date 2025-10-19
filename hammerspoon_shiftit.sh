@@ -18,7 +18,7 @@ units = {
   centered      = { x = 0.25, y = 0.00, w = 0.50, h = 1.00 }
 }
 
-mash = { 'shift', 'ctrl', 'cmd' }
+mash = { 'shift', 'ctrl' }
 
 hs.hotkey.bind(mash, 'right', function() hs.window.focusedWindow():move(units.right50,    nil, true) end)
 hs.hotkey.bind(mash, 'left', function() hs.window.focusedWindow():move(units.left50,     nil, true) end)
